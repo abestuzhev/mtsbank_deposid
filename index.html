@@ -1,0 +1,702 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>SITE2.0</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700&amp;subset=cyrillic" rel="stylesheet">
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/custom.css">
+  <link rel="stylesheet" href="./css/menu.css">
+  <link rel="stylesheet" href="./fonts/fonts.css">
+  <script src="./js/jquery-3.2.1.min.js"></script>
+  <script src="./js/tether.min.js"></script>
+  <script src="./js/bootstrap.min.js"></script>
+  <script src="./js/jquery.validate.min.js"></script>
+  <script src="./js/scrollreveal.min.js"></script>
+  <script src="./js/jquery.inputmask.bundle.min.js"></script>
+  <style>
+    .tooltip-inner {
+      background-color: #787c81;
+      font-size: 13px;
+      padding: 10px 20px 10px 10px;
+      font-family: 'Roboto', Arial, Helvetica, sans-serif;
+      max-width: 420px;
+      text-align: left;
+      border-radius: 0;
+      width: 100%;
+      box-shadow: 1px 11px 69px rgba(74, 92, 97, 0.59);
+    }
+
+    .popover {
+      border: none;
+      box-shadow: 1px 11px 69px rgba(74, 92, 97, 0.49);
+      background-color: $mts-white;
+      padding: 16px 28px 16px 13px;
+    }
+
+    .popover-title {
+      color: #adb8c1;
+      font-size: 15px;
+      background-color: #fff;
+      border-bottom: 0px solid #ebebeb;
+      font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    }
+
+    .popover-content {
+      font-size: 17px;
+      padding-top: 0;
+    }
+
+    .popover.bs-tether-element-attached-top::before,
+    .popover.popover-bottom::before,
+    .popover.bs-tether-element-attached-top::after,
+    .popover.popover-bottom::after {
+      border-bottom-color: rgba(0, 0, 0, .0);
+    }
+
+    .tooltip.bs-tether-element-attached-top .tooltip-inner::before,
+    .tooltip.tooltip-bottom .tooltip-inner::before {
+      border-bottom-color: #787c81;
+    }
+  </style>
+  <!--[if IE]>
+      <link href="css/bootstrap-ie8.css" rel="stylesheet">
+      <script src="https://cdn.jsdelivr.net/g/html5shiv@3.7.3,respond@1.4.2"></script>
+    <![endif]-->
+</head>
+
+<body>
+  <div id="mts-hash-0003a" class="mts-hash-0003a">
+    <div class="collapse mts2-navigation__tab-switch-mobile collapsemts" aria-expanded="false">
+      <div class="row">
+        <div class="col-md-12 mts2-navigation__tab-switch-li mts2-navigation__tab-switch-li_2 btn-group btn-toggle d-flex justify-content-center" data-toggle="buttons">
+              <label class="btn btn-default mts2-navigation__tab-switch active">
+            <input class="mts2-navigation__tab-switch-1" type="radio" name="mts2-navigation__tab-switch-type-toggle" value="1">Частным лицам
+          </label>
+              <label class="btn btn-default mts2-navigation__tab-switch">
+            <input class="mts2-navigation__tab-switch-2" type="radio" name="mmts2-navigation__tab-switch-type-toggle" value="2">Бизнесу
+          </label>
+            </div>
+      </div>
+    </div>
+    <div class="mts2-navigation-lower__mobile-menu">
+      <a href="#" class="mts2-navigation__search2">
+    <object class="mts2-navigation__search-img2" data="./img/header-search-icon.svg" type="image/svg+xml"></object></a>
+      <a class="mts2-navigation-lower__logo-mobile" href="http://www.mtsbank.ru">
+        <img class="mts2-navigation-lower__logo-mobile-img" src="./img/mts2-logo.png" alt="">
+      </a>
+
+                    <form class="mts-2mobile-input-menu mts2-mobile-button-wrapper" style="display:none">
+                      <input type="text" class="mts-2mobile-input-menu__input" placeholder="Поиск...">
+                    </form>
+    <button href="#" class="open-panel mts2menubutton">
+
+    </button>
+  </div>
+    <nav class="flex-column">
+      <div class="menu mts2-navigation">
+        <div class="container">
+          <div class="row mts-reveal">
+            <div class="col-md-12 col-lg-12 col-xl-4 mts2-navigation__tab-switch-li btn-group btn-toggle d-flex justify-content-center justify-content-sm-start justify-content-md-start justify-content-lg-start" data-toggle="buttons">
+              <label class="btn btn-default mts2-navigation__tab-switch active">
+            <input class="mts2-navigation__tab-switch-1" type="radio" name="mts2-navigation__tab-switch-type-toggle" value="1">Частным лицам
+          </label>
+              <label class="btn btn-default mts2-navigation__tab-switch">
+            <input class="mts2-navigation__tab-switch-2" type="radio" name="mmts2-navigation__tab-switch-type-toggle" value="2">Бизнесу
+          </label>
+            </div>
+            <div class="col-md-3 mts2-navigation__location-li">
+              <a href="#" class="mts2-navigation__location">
+            <object class="mts2-navigation__location-img" data="./img/header-location-icon.svg" type="image/svg+xml"></object>
+            Москва</a>
+              <a href="#" class="mts2-navigation__offices">Офисы</a> и
+              <a href="#" class="mts2-navigation__terminals">Банкоматы</a>
+            </div>
+            <div class="col-md-5 mts2-navigation__search-li text-right">
+              <a href="#" class="mts2-navigation__search">
+            <object class="mts2-navigation__search-img" data="./img/header-search-icon.svg" type="image/svg+xml"></object>
+            Поиск
+          </a>
+              <a href="#" class="mts2-navigation__contacts">
+            <object class="mts2-navigation__contacts-img" data="./img/header-phone-icon.svg" type="image/svg+xml"></object>
+            Связаться с банком
+          </a>
+              <a href="#" class="mts2-navigation__btn mts2-btn">Интернет&#8209;банк
+          </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="d-flex menu mts2-navigation-lower">
+        <div class="container mts-reveal">
+          <!-- <div class="row">
+
+            <div class="col-md-12 mts2-navigation-lower__link-li  mts-reveal  flex-column d-flex flex-md-column flex-sm-column flex-lg-row flex-xl-row">
+
+              <form action="" class="mts-2mobile-input-menu mts2-mobile-button-wrapper">
+                <input type="text" class="mts-2mobile-input-menu__input" placeholder="Поиск...">
+              </form>
+            </div>
+          </div> -->
+          <!-- <hr class="mts-2-menu-hr"> -->
+          <div class="collapsemts collapse" style="max-height: 419px;">
+          <div class="row">
+            <div class="col-md-12 mts2-navigation-lower__link-li flex-column d-flex flex-md-column flex-sm-column flex-lg-row flex-xl-row">
+              <a class="mts2-navigation-lower__logo" href="http://www.mtsbank.ru">
+                <img src="./img/mts2-logo.png" alt="">
+              </a>
+              <div class="mts2-mobile-button-wrapper">
+                <a href="#" class="mts2-navigation__btn mts2-navigation__btn_2 mts2-btn">Интернет-банк</a>
+              </div>
+              <div class="d-flex align-items-start flex-column flex-column flex-column-row flex-lg-row mts-2-white-lower ">
+                <a href="#" class="mts2-navigation-lower__link">Абонентам МТС</a>
+                <a href="#" class="mts2-navigation-lower__link">Кредиты</a>
+                <a href="#" class="mts2-navigation-lower__link">Банковские карты</a>
+                <a href="#" class="mts2-navigation-lower__link">Вклады</a>
+                <a href="#" class="mts2-navigation-lower__link">Дополнительные сервисы</a>
+                <div class="mts-loc-phone-group-mobile">
+                  <a href="#" class="mts2-navigation__location">
+                    <object class="mts2-navigation__location-img" data="./img/header-location-icon.svg" type="image/svg+xml"></object>
+                    </a>
+                    <a href="#" class="mts2-navigation__offices">Офисы</a> и
+                    <a href="#" class="mts2-navigation__terminals">Банкоматы</a>
+
+                  </div>
+                  <div class="mts-loc-phone-group-mobile">
+                  <a href="#" class="">
+                    <object class="mts2-navigation__contacts-img" data="./img/header-phone-icon.svg" type="image/svg+xml"></object>
+                    Связаться с банком
+                  </a>
+              </div>
+              </div>
+            </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </nav>
+
+    <div id="mts-hash-0003a__content" class="mts-hash-0003a__content">
+
+      <section class="col-xl-8 col-md-8 mts2-section-credit-selector">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <h1 class="mts2-section-credit-selector__heading  mts-reveal">Вклады</h1>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xl-12 col-md-12  mts-reveal-order">
+              <div class="mts2-card-credit mts2-card mts2-card-credit__percent mts2-card-credit__percent_loan">
+                <div class="row">
+                  <div class="col-md-12">
+                    <h2 class="mts2-card-credit__heading">МТС Лови момент</h2>
+                  </div>
+                </div>
+                <div class="row">
+                  <a class="mts2-card-credit__btn mts2-btn mts2-btn__white" href="">Оформить заявку</a>
+                  <div class="col-md-4">
+                    <p class="mts2-card-credit__percent">
+                      <span class="mts2-card-credit__percent-span mts2-card-credit__percent-span_1">от</span>10 000
+                      <span class="mts2-card-credit__percent-span mts2-card-credit__percent-span_3">Р</span>
+                    </p>
+                    <p class="mts2-card-credit__subtext">Первоначальный взнос</p>
+                  </div>
+                  <div class="col-md-6">
+                    <p class="mts2-card-credit__percent">
+                      <span class="mts2-card-credit__percent-span mts2-card-credit__percent-span_1">до</span>
+                      8,25
+                      <span class="mts2-card-credit__percent-span mts2-card-credit__percent-span_3">%</span>
+                    </p>
+                    <p class="mts2-card-credit__subtext">Годовая процентная ставка</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-12 col-md-12  mts-reveal-order">
+              <div class="mts2-card-credit mts2-card mts2-card-credit__percent mts2-card-credit__percent_work-pay">
+                <div class="row">
+                  <div class="col-md-12">
+                    <h2 class="mts2-card-credit__heading">МТС Доходный</h2>
+                  </div>
+                </div>
+                <div class="row">
+                  <a class="mts2-card-credit__btn mts2-btn mts2-btn__white" href="">Оформить заявку</a>
+                  <div class="col-md-4">
+                    <p class="mts2-card-credit__percent">
+                      <span class="mts2-card-credit__percent-span mts2-card-credit__percent-span_1">от</span>1000
+                      <span class="mts2-card-credit__percent-span mts2-card-credit__percent-span_3">Р</span>
+                    </p>
+                    <p class="mts2-card-credit__subtext">Первоначальный взнос</p>
+                  </div>
+                  <div class="col-md-6">
+                    <p class="mts2-card-credit__percent">
+                      <span class="mts2-card-credit__percent-span">до</span>
+                      8,20
+                      <span class="mts2-card-credit__percent-span mts2-card-credit__percent-span_3">%</span>
+                    </p>
+                    <p class="mts2-card-credit__subtext">Годовая процентная ставка</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-xl-12 col-md-12  mts-reveal-order">
+              <div class="mts2-card-credit mts2-card mts2-card-credit__with-button mts2-card-credit__for-clients">
+                <div class="row">
+                  <div class="col-md-12">
+                    <h2 class="mts2-card-credit__heading">МТС Активный</h2>
+                  </div>
+                </div>
+                <div class="row">
+                  <a class="mts2-card-credit__btn mts2-btn mts2-btn__white" href="">Оформить заявку</a>
+                  <div class="col-md-3">
+                    <p class="mts2-card-credit__percent">
+                      <span class="mts2-card-credit__percent-span mts2-card-credit__percent-span_1">от</span>1000
+                      <span class="mts2-card-credit__percent-span mts2-card-credit__percent-span_3">Р</span>
+                    </p>
+                    <p class="mts2-card-credit__subtext">Первоначальный взнос</p>
+                  </div>
+                  <div class="col-md-6">
+                    <p class="mts2-card-credit__percent">
+                      <span class="mts2-card-credit__percent-span">до</span>
+                      7,45
+                      <span class="mts2-card-credit__percent-span mts2-card-credit__percent-span_3">%</span>
+                    </p>
+                    <p class="mts2-card-credit__subtext">Годовая процентная ставка</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-12 col-md-12  mts-reveal-order">
+              <div class="mts2-card-credit mts2-card mts2-card-credit__percent mts2-card-credit__percent_refinanced">
+                <div class="row">
+                  <div class="col-md-12">
+                    <h2 class="mts2-card-credit__heading">МТС Свободный</h2>
+                  </div>
+                </div>
+                <div class="row">
+                  <a class="mts2-card-credit__btn mts2-btn mts2-btn__white" href="">Оформить заявку</a>
+                  <div class="col-md-3">
+                    <p class="mts2-card-credit__percent">
+                      <span class="mts2-card-credit__percent-span mts2-card-credit__percent-span_1">от</span>50 000
+                      <span class="mts2-card-credit__percent-span mts2-card-credit__percent-span_3">Р</span>
+                    </p>
+                    <p class="mts2-card-credit__subtext">Первоначальный взнос</p>
+                  </div>
+                  <div class="col-md-6">
+                    <p class="mts2-card-credit__percent">
+                      <span class="mts2-card-credit__percent-span mts2-card-credit__percent-span_1">до</span>
+                      6,95
+                      <span class="mts2-card-credit__percent-span mts2-card-credit__percent-span_3">%</span>
+                    </p>
+                    <p class="mts2-card-credit__subtext">Годовая процентная ставка</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-xl-12 col-md-12  mts-reveal-order">
+              <div class="mts2-card-credit mts2-card mts2-card-credit__with-text mts2-card-credit__percent_med">
+                <div class="row">
+                  <div class="col-md-12">
+                    <h2 class="mts2-card-credit__heading">Доступный</h2>
+                  </div>
+                </div>
+                <div class="row">
+                  <a class="mts2-card-credit__btn mts2-btn mts2-btn__white" href="">Оформить заявку</a>
+                  <div class="col-md-12">
+                    <p class="mts2-card-credit__text">Выгодное предложение МТС банка и&nbsp;сети клиник Медси. Теперь можно не&nbsp;откладывать лечение!</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-6 col-md-12"></div>
+          </div>
+        </div>
+      </section>
+
+
+      <section class="col-xl-4 col-md-4"></section>
+
+
+
+
+
+
+
+      <footer class="mts2-footer">
+        <div class="container mts-reveal">
+          <div class="row">
+            <div id="accordion" role="tablist" aria-multiselectable="true" class="mts-reveal mts2-accordion-card">
+              <div class="mts2-accordion-card__inner-wrapper">
+                <div class="" role="tab" id="heading1">
+                  <h5 class="mb-0">
+
+                      <p class="mts2-footer__heading mts2-footer__heading_mobile collapsed" data-toggle="collapse" aria-expanded="false" data-target="#collapse1" href="#collapse1" aria-controls="collapse1">Общая информация</p>
+
+                  </h5>
+                </div>
+
+                <div id="collapse1" class="collapse " role="tabpanel" aria-labelledby="heading1">
+                  <div class="card-block">
+                    <ul class="mts2-footer__list">
+                      <li><a class="" href="#/">О банке</a></li>
+                      <li><a class="" href="#/">Офисы и банкоматы</a></li>
+                      <li><a class="" href="#/">Вакансии</a></li>
+                      <li><a class="" href="#/">Залоговое имущество</a></li>
+                      <li><a class="" href="#/">Раскрытие информации</a></li>
+                      <li><a class="" href="#/">Ставки по вкладам</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="mts2-accordion-card__inner-wrapper">
+                <div class="" role="tab" id="headingOne">
+                  <h5 class="mb-0">
+
+                      <p class="mts2-footer__heading mts2-footer__heading_mobile collapsed" data-toggle="collapse" data-target="#collapse2" href="#collapse2" aria-controls="collapse2">Онлайн-сервисы</p>
+
+                  </h5>
+                </div>
+
+                <div id="collapse2" class="collapse " role="tabpanel" aria-labelledby="heading2">
+                  <div class="card-block">
+                    <ul class="mts2-footer__list">
+                      <li><a class="" href="#/">Написать в банк</a></li>
+                      <li><a class="" href="#/">Заявки и калькуляторы</a></li>
+                      <li><a class="" href="#/">Мошенничество!</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="mts2-accordion-card__inner-wrapper">
+                <div class="" role="tab" id="heading3">
+                  <h5 class="mb-0">
+
+                      <p class="mts2-footer__heading mts2-footer__heading_mobile collapsed" data-toggle="collapse" data-target="#collapse3" href="#collapse3" aria-controls="collapse3">Курсы валют на сегодня</p>
+
+                  </h5>
+                </div>
+
+                <div id="collapse3" class="collapse " role="tabpanel" aria-labelledby="heading3">
+                  <div class="card-block">
+
+                    <button class="mts2-footer__switch" type="button" name="button">Наличные Безналичные</button>
+                    <table>
+                      <tbody>
+                        <tr>
+                          <th>Валюта</th>
+                          <th>Покупка</th>
+                          <th>Продажа</th>
+                          <th></th>
+                        </tr>
+                        <tr class="mts2-exchange-table__first-row">
+                          <td class="mts2-exchange-table__unit">USD</td>
+                          <td>61,260</td>
+                          <td>61,260</td>
+                          <td><object data="./img/header-arrow-icon.svg" type="image/svg+xml"></object></td>
+                        </tr>
+                        <tr class="mts2-exchange-table__second-row">
+                          <td class="mts2-exchange-table__unit">USD</td>
+                          <td>61,260</td>
+                          <td>61,260</td>
+                          <td><object data="./img/header-arrow-icon.svg" type="image/svg+xml"></object></td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+              <div class="mts2-accordion-card__inner-wrapper">
+                <div class="" role="tab" id="headingOne">
+                  <h5 class="mb-0">
+
+                      <p class="mts2-footer__heading mts2-footer__heading_mobile collapsed" data-toggle="collapse" data-target="#collapse4" href="#collapse4" aria-controls="collapse4">Мобильный банк</p>
+
+                  </h5>
+                </div>
+
+                <div id="collapse4" class="collapse " role="tabpanel" aria-labelledby="heading4">
+                  <div class="card-block">
+                    <div class="mts2-footer__app-download">
+                      <a target="_blank" href="https://itunes.apple.com/ru/app/mts-bank/id497905150?mt=8&ign-mpt=uo%3D4">
+                        <img class="section-footer__pay-icons" src="./img/mts2-apple-logo.svg" alt="">
+                        <img class="section-footer__pay-icons_hover" src="./img/mts2-apple-logo_hover.svg" alt="">
+                      </a>
+                      <a target="_blank" href="https://play.google.com//store/apps/details?id=ru.simpls.mbrd.ui">
+                        <img class="section-footer__pay-icons" src="./img/mts2-android-logo.svg" alt="">
+                        <img class="section-footer__pay-icons_hover" src="./img/mts2-android-logo_hover.svg" alt="">
+                      </a>
+                      <a target="_blank" href="https://www.microsoft.com/ru-ru/store/p/%D0%9C%D0%A2%D0%A1-%D0%91%D0%B0%D0%BD%D0%BA/9nblggh09dss?rtc=1">
+                        <img class="section-footer__pay-icons" src="./img/mts2-windows-logo.svg" alt="">
+                        <img class="section-footer__pay-icons_hover" src="./img/mts2-windows-logo_hover.svg" alt="">
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row d-flex flex-column-reverse flex-sm-column-reverse flex-md-row">
+            <div class="col-md-4">
+              <p class="mts2-footer__heading mts2-accordion-card__row-desk">Общая информация</p>
+              <ul class="mts2-footer__list mts2-accordion-card__row-desk">
+                <li><a class="" href="#/">О банке</a></li>
+                <li><a class="" href="#/">Офисы и банкоматы</a></li>
+                <li><a class="" href="#/">Вакансии</a></li>
+                <li><a class="" href="#/">Залоговое имущество</a></li>
+                <li><a class="" href="#/">Раскрытие информации</a></li>
+                <li><a class="" href="#/">Ставки по вкладам</a></li>
+              </ul>
+              <div class="mts2-footer__soc-block d-flex align-items-center">
+                <a target="_blank" href="https://vk.com/mtsbankru" class="mts2-footer__soc-icons mts2-footer__soc-icons_vk">
+                  <img class="mts2-footer__vk" src="./img/mts2-vk-logo.svg" alt="">
+                  <img class="mts2-footer__vk" data-soc-active="1" src="./img/mts2-vk-logo-hover.svg" alt="">
+                </a>
+                <a target="_blank" href="http://www.mtsbank.ru/currency/rss.xml" class="mts2-footer__soc-icons mts2-footer__soc-icons_rss">
+                  <img class="mts2-footer__tw" src="./img/mts2-tw-logo.svg" alt="">
+                  <img class="mts2-footer__tw" data-soc-active="1" src="./img/mts2-tw-logo-hover.svg" alt="">
+                </a>
+                <a target="_blank" href="https://www.facebook.com/mtsbank/" class="mts2-footer__soc-icons mts2-footer__soc-icons_fb">
+                  <img class="mts2-footer__fb" src="./img/mts2-fb-logo.svg" alt="">
+                  <img class="mts2-footer__fb" data-soc-active="1" src="./img/mts2-fb-logo-hover.svg" alt="">
+                </a>
+                <a target="_blank" href="https://www.instagram.com/mts_bank/" class="mts2-footer__soc-icons mts2-footer__soc-icons_insta">
+                  <img class="mts2-footer__insta" src="./img/mts2-instagram-logo.svg" alt="">
+                  <img class="mts2-footer__insta" data-soc-active="1" src="./img/mts2-instagram-logo-hover.svg" alt="">
+                </a>
+
+              </div>
+            </div>
+            <div class="col-md-4 mts2-phone-wrapper">
+              <p class="mts2-footer__heading mts2-accordion-card__row-desk">Онлайн-сервисы</p>
+              <ul class="mts2-footer__list mts2-accordion-card__row-desk">
+                <li><a class="" href="#/">Написать в банк</a></li>
+                <li><a class="" href="#/">Заявки и калькуляторы</a></li>
+                <li><a class="" href="#/">Мошенничество!</a></li>
+              </ul>
+              <div class="mts2-footer__phone">
+                <a href="tel:88003001010">8 (800) 300-10-10</a>
+                <p>Бесплатно по всей России</p>
+              </div>
+              <div class="mts2-footer__phone">
+                <a href="tel:+74952162020">+7 (495) 216-20-20</a>
+                <p>По Москве</p>
+              </div>
+            </div>
+            <div class="col-sm-12 col-md-4 mts2-accordion-card__row-desk">
+              <p class="mts2-footer__heading">Курсы валют на сегодня
+                <img class="mts2-footer__heading-img" width="16" src="./img/rss.svg" alt="">
+              </p>
+              <button class="mts2-footer__switch" type="button" name="button">Наличные Безналичные</button>
+              <table>
+                <tbody>
+                  <tr>
+                    <th>Валюта</th>
+                    <th>Покупка</th>
+                    <th>Продажа</th>
+                    <th></th>
+                  </tr>
+                  <tr class="mts2-exchange-table__first-row">
+                    <td class="mts2-exchange-table__unit">USD</td>
+                    <td>61,260</td>
+                    <td>61,260</td>
+                    <td><object data="./img/header-arrow-icon.svg" type="image/svg+xml"></object></td>
+                  </tr>
+                  <tr class="mts2-exchange-table__second-row">
+                    <td class="mts2-exchange-table__unit">USD</td>
+                    <td>61,260</td>
+                    <td>61,260</td>
+                    <td><object data="./img/header-arrow-icon.svg" type="image/svg+xml"></object></td>
+                  </tr>
+                </tbody>
+              </table>
+              <p class="mts2-footer__heading">Мобильный банк</p>
+              <div class="mts2-footer__app-download">
+                <a target="_blank" href="https://itunes.apple.com/ru/app/mts-bank/id497905150?mt=8&ign-mpt=uo%3D4">
+                  <img class="section-footer__pay-icons" src="./img/mts2-apple-logo.svg" alt="">
+                </a>
+                <a target="_blank" href="https://play.google.com//store/apps/details?id=ru.simpls.mbrd.ui">
+                  <img class="section-footer__pay-icons" src="./img/mts2-android-logo.svg" alt="">
+                </a>
+                <a target="_blank" href="https://www.microsoft.com/ru-ru/store/p/%D0%9C%D0%A2%D0%A1-%D0%91%D0%B0%D0%BD%D0%BA/9nblggh09dss?rtc=1">
+                  <img class="section-footer__pay-icons" src="./img/mts2-windows-logo.svg" alt="">
+                </a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </footer>
+      <section class="mts2-sub-footer-seo">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+
+
+                <p class="">Официальный сайт МТС Банка. Услуги физическим лицам, юридическим лицам, кредитным организациям. Мобильный и интернет-банкинг. Адреса отделений МТС Банка и банкоматов. ☎ 8 800 250-0-520 бесплатно по России. Онлайн оформление кредита наличными до 3 000 000 под процентную ставку от 12% годовых. Выгодные вклады в МТС Банке под высокий процент. Банковские карты МТС Банка. Оформление, выдача и обслуживание банковских карт в МТС Банке. МТС Банк представляет своим клиентам высокотехнологичные дистанционные сервисы, позволяющие удобно и безопасно осуществлять операции и контроль денежных средств. Банкоматы МТС Банка в Москве. Снятие и внесение наличных, оплата кредитов и ЖКХ. Наш телефон ☎ 8 800 250-0-520, бесплатно по России.</p>
+
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="mts2-sub-footer">
+        <div class="container mts-reveal">
+          <div class="mts2-sub-footer__toggler-wrapper">
+            <img class="mts2-sub-footer__toggler" src="./img/mts2-triangle.svg" alt=""/>
+          </div>
+
+          <div class="row d-flex flex-column-reverse flex-sm-column-reverse flex-md-row">
+          <div class="col-md-7">
+          <p class="mts2-sub-footer__text">© 2017 ПАО «МТС-Банк» Лицензия Банка России №2268 от 17.12.2014 г.</p>
+        </div>
+        <div class="col-md-5">
+          <a class="mts2-sub-footer__text">
+            <img class="mts2-sub-footer__logo" src="./img/mts2-card-credit__aic-logo.png" alt="">— дизайн
+          </a>
+        </div>
+      </div>
+    </div>
+      </section>
+    </div>
+  </div>
+
+  <div class="mts-scripts__init">
+    <script>
+    $(document).ready(function() {
+  $(".mts2-sub-footer__toggler").click(function() {
+    var showSubFooter = $(".mts2-sub-footer-seo");
+    $(this).toggleClass("active");
+    if (showSubFooter.hasClass("active")) {
+      showSubFooter.removeClass("active");
+      showSubFooter.slideUp();
+    } else {
+      showSubFooter.addClass("active");
+      showSubFooter.slideDown();
+    }
+  });
+});
+</script>
+<script>
+$('.collapsemts').collapse({
+  toggle: false
+})
+$(".mts2menubutton").on("click", function() {
+$('.collapsemts').collapse('toggle');
+$('.mts2menubutton').toggleClass('active');
+});
+
+$(".mts2-navigation__search2").on("click", function() {
+// $('.mts2-navigation-lower__logo-mobile-img').animate({"opacity": "toggle"});
+$('.mts-2mobile-input-menu').fadeToggle(300);
+});
+</script>
+    <!-- <script>
+    $(".open-panel").click(function() {
+  $("html").addClass("openNav");
+  $("html").removeClass("closingNav");
+});
+
+$(".close-panel, #content").click(function() {
+  $("html").removeClass("openNav");
+  $("html").addClass("closingNav");
+});
+</script> -->
+
+    <script>
+    $(document).ready(function() {
+  $(".mts-checkbox-switch").click(function() {
+    var attr = $(".mts-hidden-input").attr("required");
+    $(".mts-previous-passport").fadeToggle(200);
+    if (typeof attr !== typeof undefined && attr !== false) {
+      $(".mts-hidden-input").prop("required", false);
+    } else {
+      $(".mts-hidden-input").prop("required", true);
+    }
+  });
+});
+</script>
+    <script>
+    $(document).ready(function() {
+  $(".mts-checkbox-switch2").click(function() {
+    var attr = $(".mts-hidden-input2").attr("required");
+    $(".mts-previous-passport2").fadeToggle(200);
+    if (typeof attr !== typeof undefined && attr !== false) {
+      $(".mts-hidden-input2").prop("required", false);
+    } else {
+      $(".mts-hidden-input2").prop("required", true);
+    }
+  });
+});
+</script>
+
+
+
+    <script>
+    window.sr = ScrollReveal({
+  duration: 700,
+  viewFactor: 0.1,
+  origin: "center",
+  reset: false,
+  mobile: false
+});
+// sr.reveal('.mts-reveal');
+sr.reveal(".mts-reveal", {
+  duration: 800,
+  reset: false,
+  viewFactor: 0.1
+});
+sr.reveal(
+  ".mts-reveal-order",
+  {
+    duration: 800,
+    reset: false,
+    viewFactor: 0.1
+  },
+  120
+);
+</script>
+
+
+
+    <script>
+    $(document).ready(function() {
+  $(".mts2-navigation__tab-switch").click(function() {
+    var test = $(this).find("input[name$='mts2-navigation__tab-switch-type-toggle']").val();
+    $(".mts2-navigation__tab-switch-type").hide();
+    $(".mts2-navigation__tab-switch-type[data-biztype='" + test + "']").fadeToggle(200);
+  });
+});
+</script>
+
+    <script>
+    $(function() {
+  $('[data-toggle="tooltip"]').tooltip();
+});
+$(function() {
+  $('[data-toggle="popover"]').popover();
+});
+</script>
+
+    <script>
+    $(function() {
+  $(".btn-how-card-info").click(function() {
+    var test = $(this).find("input[name$='how-card-info']").val();
+    $(".how-card-info-item").hide();
+    $(".how-card-info-item[data-num='" + test + "']").fadeToggle(200);
+  });
+});
+</script>
+  </div>
+  </div>
+</body>
+
+</html>
