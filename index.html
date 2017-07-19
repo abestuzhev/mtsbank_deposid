@@ -7,8 +7,7 @@
   <title>SITE2.0</title>
   <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700&amp;subset=cyrillic" rel="stylesheet">
   <link rel="stylesheet" href="./css/bootstrap.min.css">
-  <link rel="stylesheet" href="./css/custom.css">
-  <link rel="stylesheet" href="./css/menu.css">
+  <link rel="stylesheet" href="./css/style.css">
   <link rel="stylesheet" href="./fonts/fonts.css">
   <script src="./js/jquery-3.2.1.min.js"></script>
   <script src="./js/tether.min.js"></script>
@@ -109,18 +108,18 @@
             </div>
             <div class="col-md-3 mts2-navigation__location-li">
               <a href="#" class="mts2-navigation__location">
-            <object class="mts2-navigation__location-img" data="./img/header-location-icon.svg" type="image/svg+xml"></object>
+            <object class="mts2-navigation__location-img" data="img/header-location-icon.svg" type="image/svg+xml"></object>
             Москва</a>
               <a href="#" class="mts2-navigation__offices">Офисы</a> и
               <a href="#" class="mts2-navigation__terminals">Банкоматы</a>
             </div>
             <div class="col-md-5 mts2-navigation__search-li text-right">
               <a href="#" class="mts2-navigation__search">
-            <object class="mts2-navigation__search-img" data="./img/header-search-icon.svg" type="image/svg+xml"></object>
+            <object class="mts2-navigation__search-img" data="img/header-search-icon.svg" type="image/svg+xml"></object>
             Поиск
           </a>
               <a href="#" class="mts2-navigation__contacts">
-            <object class="mts2-navigation__contacts-img" data="./img/header-phone-icon.svg" type="image/svg+xml"></object>
+            <object class="mts2-navigation__contacts-img" data="img/header-phone-icon.svg" type="image/svg+xml"></object>
             Связаться с банком
           </a>
               <a href="#" class="mts2-navigation__btn mts2-btn">Интернет&#8209;банк
@@ -158,7 +157,7 @@
                 <a href="#" class="mts2-navigation-lower__link">Дополнительные сервисы</a>
                 <div class="mts-loc-phone-group-mobile">
                   <a href="#" class="mts2-navigation__location">
-                    <object class="mts2-navigation__location-img" data="./img/header-location-icon.svg" type="image/svg+xml"></object>
+                    <object class="mts2-navigation__location-img" data="img/header-location-icon.svg" type="image/svg+xml"></object>
                     </a>
                     <a href="#" class="mts2-navigation__offices">Офисы</a> и
                     <a href="#" class="mts2-navigation__terminals">Банкоматы</a>
@@ -181,150 +180,335 @@
 
     <div id="mts-hash-0003a__content" class="mts-hash-0003a__content">
 
-      <section class="col-xl-8 col-md-8 mts2-section-credit-selector">
+      <section class="col-md-12 mts2-section-credit-selector">
         <div class="container">
           <div class="row">
             <div class="col-md-12">
               <h1 class="mts2-section-credit-selector__heading  mts-reveal">Вклады</h1>
             </div>
           </div>
-          <div class="row">
-            <div class="col-xl-12 col-md-12  mts-reveal-order">
-              <div class="mts2-card-credit mts2-card mts2-card-credit__percent mts2-card-credit__percent_loan">
-                <div class="row">
-                  <div class="col-md-12">
-                    <h2 class="mts2-card-credit__heading">МТС Лови момент</h2>
+          <div class="content-layout row">
+            <div class="section-layout col-lg-8 col-md-7 col-sm-12">
+
+              <div class="row">
+                <div class="col-xl-12 col-md-12  mts-reveal-order">
+                  <div class="mts2-card-credit mts2-card mts2-card-credit__percent mts2-card-credit__percent_loan">
+                    <div class="row">
+                      <div class="col-md-12">
+                        <h2 class="mts2-card-credit__heading">МТС Лови момент</h2>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <a class="mts2-card-credit__btn mts2-btn mts2-btn__white" href="">Оформить заявку</a>
+                      <div class="col-xl-12 col-md-12">
+                        <p class="mts2-card-credit__text"></p>
+                      </div>
+                      <div class="col-lg-5 col-md-12 col-sm-12">
+                        <p class="mts2-card-credit__percent">
+                          <span class="mts2-card-credit__percent-span mts2-card-credit__percent-span_1">от</span> 10 000
+                          <span class="mts2-card-credit__percent-span mts2-card-credit__percent-span_3">Р</span>
+                        </p>
+                        <p class="mts2-card-credit__subtext">Первоначальный взнос</p>
+                      </div>
+                      <div class="col-lg-7 col-md-12 col-sm-12">
+                        <p class="mts2-card-credit__percent">
+                          <span class="mts2-card-credit__percent-span mts2-card-credit__percent-span_1">до</span>
+                          8,25
+                          <span class="mts2-card-credit__percent-span mts2-card-credit__percent-span_3">%</span>
+                        </p>
+                        <p class="mts2-card-credit__subtext">Годовая процентная ставка</p>
+                      </div>
+                    </div>
                   </div>
                 </div>
-                <div class="row">
-                  <a class="mts2-card-credit__btn mts2-btn mts2-btn__white" href="">Оформить заявку</a>
-                  <div class="col-md-4">
-                    <p class="mts2-card-credit__percent">
-                      <span class="mts2-card-credit__percent-span mts2-card-credit__percent-span_1">от</span>10 000
-                      <span class="mts2-card-credit__percent-span mts2-card-credit__percent-span_3">Р</span>
-                    </p>
-                    <p class="mts2-card-credit__subtext">Первоначальный взнос</p>
+                <div class="col-xl-12 col-md-12  mts-reveal-order">
+                  <div class="mts2-card-credit mts2-card mts2-card-credit__percent mts2-card-credit__percent_work-pay">
+                    <div class="row">
+                      <div class="col-md-12">
+                        <h2 class="mts2-card-credit__heading">МТС Доходный</h2>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <a class="mts2-card-credit__btn mts2-btn mts2-btn__white" href="">Оформить заявку</a>
+                      <div class="col-xl-12 col-md-12">
+                        <p class="mts2-card-credit__text"></p>
+                      </div>
+                      <div class="col-lg-5 col-md-12 col-sm-12">
+                        <p class="mts2-card-credit__percent">
+                          <span class="mts2-card-credit__percent-span mts2-card-credit__percent-span_1">от</span> 1000
+                          <span class="mts2-card-credit__percent-span mts2-card-credit__percent-span_3">Р</span>
+                        </p>
+                        <p class="mts2-card-credit__subtext">Первоначальный взнос</p>
+                      </div>
+                      <div class="col-lg-7 col-md-12 col-sm-12">
+                        <p class="mts2-card-credit__percent">
+                          <span class="mts2-card-credit__percent-span">до</span>
+                          8,20
+                          <span class="mts2-card-credit__percent-span mts2-card-credit__percent-span_3">%</span>
+                        </p>
+                        <p class="mts2-card-credit__subtext">Годовая процентная ставка</p>
+                      </div>
+                    </div>
                   </div>
-                  <div class="col-md-6">
-                    <p class="mts2-card-credit__percent">
-                      <span class="mts2-card-credit__percent-span mts2-card-credit__percent-span_1">до</span>
-                      8,25
-                      <span class="mts2-card-credit__percent-span mts2-card-credit__percent-span_3">%</span>
-                    </p>
-                    <p class="mts2-card-credit__subtext">Годовая процентная ставка</p>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-xl-12 col-md-12  mts-reveal-order">
+                  <div class="mts2-card-credit mts2-card mts2-card-credit__with-button mts2-card-credit__for-clients">
+                    <div class="row">
+                      <div class="col-md-12">
+                        <h2 class="mts2-card-credit__heading">МТС Активный</h2>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <a class="mts2-card-credit__btn mts2-btn mts2-btn__white" href="">Оформить заявку</a>
+                      <div class="col-xl-12 col-md-12">
+                        <p class="mts2-card-credit__text">Вклад с возможностью пополнения. Ежемесячная выплата процентов</p>
+                      </div>
+                      <div class="col-lg-5 col-md-12 col-sm-12">
+                        <p class="mts2-card-credit__percent">
+                          <span class="mts2-card-credit__percent-span mts2-card-credit__percent-span_1">от</span> 1000
+                          <span class="mts2-card-credit__percent-span mts2-card-credit__percent-span_3">Р</span>
+                        </p>
+                        <p class="mts2-card-credit__subtext">Первоначальный взнос</p>
+                      </div>
+                      <div class="col-lg-7 col-md-12 col-sm-12">
+                        <p class="mts2-card-credit__percent">
+                          <span class="mts2-card-credit__percent-span">до</span>
+                          7,45
+                          <span class="mts2-card-credit__percent-span mts2-card-credit__percent-span_3">%</span>
+                        </p>
+                        <p class="mts2-card-credit__subtext">Годовая процентная ставка</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xl-12 col-md-12  mts-reveal-order">
+                  <div class="mts2-card-credit mts2-card mts2-card-credit__percent mts2-card-credit__percent_refinanced">
+                    <div class="row">
+                      <div class="col-md-12">
+                        <h2 class="mts2-card-credit__heading">МТС Свободный</h2>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <a class="mts2-card-credit__btn mts2-btn mts2-btn__white" href="">Оформить заявку</a>
+                      <div class="col-xl-12 col-md-12">
+                        <p class="mts2-card-credit__text">Вклад с возможностью пополнения. Ежемесячная выплата процентов</p>
+                      </div>
+                      <div class="col-lg-5 col-md-12 col-sm-12">
+                        <p class="mts2-card-credit__percent">
+                          <span class="mts2-card-credit__percent-span mts2-card-credit__percent-span_1">от</span> 50 000
+                          <span class="mts2-card-credit__percent-span mts2-card-credit__percent-span_3">Р</span>
+                        </p>
+                        <p class="mts2-card-credit__subtext">Первоначальный взнос</p>
+                      </div>
+                      <div class="col-lg-7 col-md-12 col-sm-12">
+                        <p class="mts2-card-credit__percent">
+                          <span class="mts2-card-credit__percent-span mts2-card-credit__percent-span_1">до</span>
+                          6,95
+                          <span class="mts2-card-credit__percent-span mts2-card-credit__percent-span_3">%</span>
+                        </p>
+                        <p class="mts2-card-credit__subtext">Годовая процентная ставка</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-xl-12 col-md-12  mts-reveal-order">
+                  <div class="mts2-card-credit mts2-card mts2-card-credit__with-button mts2-card-credit__for-clients">
+                    <div class="row">
+                      <div class="col-md-12">
+                        <h2 class="mts2-card-credit__heading">Доступный</h2>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <a class="mts2-card-credit__btn mts2-btn mts2-btn__white" href="">Оформить заявку</a>
+                      <div class="col-xl-12 col-md-12">
+                        <p class="mts2-card-credit__text">Накопительный счет с ежемесячным доходом и свободным управлением</p>
+                      </div>
+                      <div class="col-lg-5 col-md-12 col-sm-12">
+                        <p class="mts2-card-credit__percent">
+                          <span class="mts2-card-credit__percent-span mts2-card-credit__percent-span_1">от</span> 1
+                          <span class="mts2-card-credit__percent-span mts2-card-credit__percent-span_3">Р</span>
+                        </p>
+                        <p class="mts2-card-credit__subtext">Первоначальный взнос</p>
+                      </div>
+                      <div class="col-lg-7 col-md-12 col-sm-12">
+                        <p class="mts2-card-credit__percent">
+                          <span class="mts2-card-credit__percent-span">до</span>
+                          6
+                          <span class="mts2-card-credit__percent-span mts2-card-credit__percent-span_3">%</span>
+                        </p>
+                        <p class="mts2-card-credit__subtext">Годовая процентная ставка</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xl-12 col-md-12  mts-reveal-order">
+                  <div class="mts2-card-credit mts2-card mts2-card-credit__percent mts2-card-credit__percent_refinanced">
+                    <div class="row">
+                      <div class="col-md-12">
+                        <h2 class="mts2-card-credit__heading">МТС Мультивалютный</h2>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <a class="mts2-card-credit__btn mts2-btn mts2-btn__white" href="">Оформить заявку</a>
+                      <div class="col-xl-12 col-md-12">
+                        <p class="mts2-card-credit__text">Возможность оперативно конвертировать средства при колебании курсов без потери дохода</p>
+                      </div>
+                      <div class="col-lg-5 col-md-12 col-sm-12">
+                        <p class="mts2-card-credit__percent">
+                          <span class="mts2-card-credit__percent-span mts2-card-credit__percent-span_1">от</span> 50 000
+                          <span class="mts2-card-credit__percent-span mts2-card-credit__percent-span_3">Р</span>
+                        </p>
+                        <p class="mts2-card-credit__subtext">Первоначальный взнос</p>
+                      </div>
+                      <div class="col-lg-7 col-md-12 col-sm-12">
+                        <p class="mts2-card-credit__percent">
+                          <span class="mts2-card-credit__percent-span mts2-card-credit__percent-span_1">до</span>
+                          6,95
+                          <span class="mts2-card-credit__percent-span mts2-card-credit__percent-span_3">%</span>
+                        </p>
+                        <p class="mts2-card-credit__subtext">Годовая процентная ставка</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-xl-12 col-md-12  mts-reveal-order">
+                  <div class="mts2-card-credit mts2-card mts2-card-credit__with-button mts2-card-credit__for-clients">
+                    <div class="row">
+                      <div class="col-md-12">
+                        <h2 class="mts2-card-credit__heading">МТС Пенсионный</h2>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <a class="mts2-card-credit__btn mts2-btn mts2-btn__white" href="">Оформить заявку</a>
+                      <div class="col-xl-12 col-md-12">
+                        <p class="mts2-card-credit__text">Пенсионный пополняемый вклад с ежемесячным доходом</p>
+                      </div>
+                      <div class="col-lg-5 col-md-12 col-sm-12">
+                        <p class="mts2-card-credit__percent">
+                          <span class="mts2-card-credit__percent-span mts2-card-credit__percent-span_1">от</span> 1 000
+                          <span class="mts2-card-credit__percent-span mts2-card-credit__percent-span_3">Р</span>
+                        </p>
+                        <p class="mts2-card-credit__subtext">Первоначальный взнос</p>
+                      </div>
+                      <div class="col-lg-7 col-md-12 col-sm-12">
+                        <p class="mts2-card-credit__percent">
+                          <span class="mts2-card-credit__percent-span">до</span>
+                          7,45
+                          <span class="mts2-card-credit__percent-span mts2-card-credit__percent-span_3">%</span>
+                        </p>
+                        <p class="mts2-card-credit__subtext">Годовая процентная ставка</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xl-12 col-md-12  mts-reveal-order">
+                  <div class="mts2-card-credit mts2-card mts2-card-credit__percent mts2-card-credit__percent_refinanced">
+                    <div class="row">
+                      <div class="col-md-12">
+                        <h2 class="mts2-card-credit__heading">Премия к ставке</h2>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <a class="mts2-card-credit__btn mts2-btn mts2-btn__white" href="">Оформить заявку</a>
+                      <div class="col-xl-12 col-md-12">
+                        <p class="mts2-card-credit__text">Возможность оперативно конвертировать средства при колебании курсов без потери дохода</p>
+                      </div>
+                      <div class="col-lg-5 col-md-12 col-sm-12">
+                        <p class="mts2-card-credit__percent">
+                          <span class="mts2-card-credit__percent-span mts2-card-credit__percent-span_1">от</span> 10 000
+                          <span class="mts2-card-credit__percent-span mts2-card-credit__percent-span_3">Р</span>
+                        </p>
+                        <p class="mts2-card-credit__subtext">Первоначальный взнос</p>
+                      </div>
+                      <div class="col-lg-7 col-md-12 col-sm-12">
+                        <p class="mts2-card-credit__percent">
+                          <span class="mts2-card-credit__percent-span mts2-card-credit__percent-span_1">до</span>
+                          8,25
+                          <span class="mts2-card-credit__percent-span mts2-card-credit__percent-span_3">%</span>
+                        </p>
+                        <p class="mts2-card-credit__subtext">Годовая процентная ставка</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-xl-12 col-md-12  mts-reveal-order">
+                  <div class="mts2-card-credit mts2-card mts2-card-credit__with-button mts2-card-credit__for-clients">
+                    <div class="row">
+                      <div class="col-md-12">
+                        <h2 class="mts2-card-credit__heading">МТС Премиальный</h2>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <a class="mts2-card-credit__btn mts2-btn mts2-btn__white" href="">Оформить заявку</a>
+                      <div class="col-xl-12 col-md-12">
+                        <p class="mts2-card-credit__text">Вклад для состоятельных клиентов с возможнотью пополнения и снятия</p>
+                      </div>
+                      <div class="col-lg-5 col-md-12 col-sm-12">
+                        <p class="mts2-card-credit__percent">
+                          <span class="mts2-card-credit__percent-span mts2-card-credit__percent-span_1">от</span> 6 000 000
+                          <span class="mts2-card-credit__percent-span mts2-card-credit__percent-span_3">Р</span>
+                        </p>
+                        <p class="mts2-card-credit__subtext">Первоначальный взнос</p>
+                      </div>
+                      <div class="col-lg-7 col-md-12 col-sm-12">
+                        <p class="mts2-card-credit__percent">
+                          <span class="mts2-card-credit__percent-span">до</span>
+                          7,50
+                          <span class="mts2-card-credit__percent-span mts2-card-credit__percent-span_3">%</span>
+                        </p>
+                        <p class="mts2-card-credit__subtext">Годовая процентная ставка</p>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="col-xl-12 col-md-12  mts-reveal-order">
-              <div class="mts2-card-credit mts2-card mts2-card-credit__percent mts2-card-credit__percent_work-pay">
-                <div class="row">
-                  <div class="col-md-12">
-                    <h2 class="mts2-card-credit__heading">МТС Доходный</h2>
+            <div class="aside-layout col-lg-4 col-md-5">
+              <div class="filter mts-reveal">
+                <a href="#" class="filter-mobile__btn">Фильтр</a>
+                <div class="filter-title">Подбор вклада</div>
+                <form class="filter-body"  action="">
+                  <div class="form-group">
+                    <div class="checkbox">
+                      <input id="checkbox-1" type="checkbox" class="filter-checkbox" value="">
+                      <label for="checkbox-1" class="filter-label">Частичное снятие</label>
+                    </div>
+                    <div class="checkbox">
+                      <input id="checkbox-2" type="checkbox" class="filter-checkbox" value="" checked>
+                      <label for="checkbox-2" class="filter-label">Возможность пополнения</label>
+                    </div>
+                    <div class="checkbox">
+                      <input id="checkbox-3" type="checkbox" class="filter-checkbox" value="">
+                      <label for="checkbox-3" class="filter-label">Ежемесячные проценты</label>
+                    </div>
+                    <div class="checkbox">
+                      <input id="checkbox-4" type="checkbox" class="filter-checkbox" value="">
+                      <label for="checkbox-4" class="filter-label">Повышенная ставка</label>
+                    </div>
                   </div>
-                </div>
-                <div class="row">
-                  <a class="mts2-card-credit__btn mts2-btn mts2-btn__white" href="">Оформить заявку</a>
-                  <div class="col-md-4">
-                    <p class="mts2-card-credit__percent">
-                      <span class="mts2-card-credit__percent-span mts2-card-credit__percent-span_1">от</span>1000
-                      <span class="mts2-card-credit__percent-span mts2-card-credit__percent-span_3">Р</span>
-                    </p>
-                    <p class="mts2-card-credit__subtext">Первоначальный взнос</p>
-                  </div>
-                  <div class="col-md-6">
-                    <p class="mts2-card-credit__percent">
-                      <span class="mts2-card-credit__percent-span">до</span>
-                      8,20
-                      <span class="mts2-card-credit__percent-span mts2-card-credit__percent-span_3">%</span>
-                    </p>
-                    <p class="mts2-card-credit__subtext">Годовая процентная ставка</p>
-                  </div>
-                </div>
+                </form>
+
               </div>
             </div>
           </div>
 
-          <div class="row">
-            <div class="col-xl-12 col-md-12  mts-reveal-order">
-              <div class="mts2-card-credit mts2-card mts2-card-credit__with-button mts2-card-credit__for-clients">
-                <div class="row">
-                  <div class="col-md-12">
-                    <h2 class="mts2-card-credit__heading">МТС Активный</h2>
-                  </div>
-                </div>
-                <div class="row">
-                  <a class="mts2-card-credit__btn mts2-btn mts2-btn__white" href="">Оформить заявку</a>
-                  <div class="col-md-3">
-                    <p class="mts2-card-credit__percent">
-                      <span class="mts2-card-credit__percent-span mts2-card-credit__percent-span_1">от</span>1000
-                      <span class="mts2-card-credit__percent-span mts2-card-credit__percent-span_3">Р</span>
-                    </p>
-                    <p class="mts2-card-credit__subtext">Первоначальный взнос</p>
-                  </div>
-                  <div class="col-md-6">
-                    <p class="mts2-card-credit__percent">
-                      <span class="mts2-card-credit__percent-span">до</span>
-                      7,45
-                      <span class="mts2-card-credit__percent-span mts2-card-credit__percent-span_3">%</span>
-                    </p>
-                    <p class="mts2-card-credit__subtext">Годовая процентная ставка</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-xl-12 col-md-12  mts-reveal-order">
-              <div class="mts2-card-credit mts2-card mts2-card-credit__percent mts2-card-credit__percent_refinanced">
-                <div class="row">
-                  <div class="col-md-12">
-                    <h2 class="mts2-card-credit__heading">МТС Свободный</h2>
-                  </div>
-                </div>
-                <div class="row">
-                  <a class="mts2-card-credit__btn mts2-btn mts2-btn__white" href="">Оформить заявку</a>
-                  <div class="col-md-3">
-                    <p class="mts2-card-credit__percent">
-                      <span class="mts2-card-credit__percent-span mts2-card-credit__percent-span_1">от</span>50 000
-                      <span class="mts2-card-credit__percent-span mts2-card-credit__percent-span_3">Р</span>
-                    </p>
-                    <p class="mts2-card-credit__subtext">Первоначальный взнос</p>
-                  </div>
-                  <div class="col-md-6">
-                    <p class="mts2-card-credit__percent">
-                      <span class="mts2-card-credit__percent-span mts2-card-credit__percent-span_1">до</span>
-                      6,95
-                      <span class="mts2-card-credit__percent-span mts2-card-credit__percent-span_3">%</span>
-                    </p>
-                    <p class="mts2-card-credit__subtext">Годовая процентная ставка</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="row">
-            <div class="col-xl-12 col-md-12  mts-reveal-order">
-              <div class="mts2-card-credit mts2-card mts2-card-credit__with-text mts2-card-credit__percent_med">
-                <div class="row">
-                  <div class="col-md-12">
-                    <h2 class="mts2-card-credit__heading">Доступный</h2>
-                  </div>
-                </div>
-                <div class="row">
-                  <a class="mts2-card-credit__btn mts2-btn mts2-btn__white" href="">Оформить заявку</a>
-                  <div class="col-md-12">
-                    <p class="mts2-card-credit__text">Выгодное предложение МТС банка и&nbsp;сети клиник Медси. Теперь можно не&nbsp;откладывать лечение!</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-xl-6 col-md-12"></div>
-          </div>
         </div>
       </section>
 
 
-      <section class="col-xl-4 col-md-4"></section>
+
 
 
 
@@ -686,13 +870,17 @@ $(function() {
 });
 </script>
 
-    <script>
-    $(function() {
-  $(".btn-how-card-info").click(function() {
-    var test = $(this).find("input[name$='how-card-info']").val();
-    $(".how-card-info-item").hide();
-    $(".how-card-info-item[data-num='" + test + "']").fadeToggle(200);
-  });
+<script>
+$(function() {
+    $(".filter-mobile__btn").click(function() {
+      $('.filter-body').fadeToggle(500);
+    });
+
+    $(".btn-how-card-info").click(function() {
+        var test = $(this).find("input[name$='how-card-info']").val();
+        $(".how-card-info-item").hide();
+        $(".how-card-info-item[data-num='" + test + "']").fadeToggle(200);
+    });
 });
 </script>
   </div>

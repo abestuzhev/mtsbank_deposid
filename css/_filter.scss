@@ -1,0 +1,112 @@
+.filter {
+  margin: 0 0 20px 40px;
+
+  &-title {
+    font-family: "Futura New";
+    font-size: 21px;
+    font-weight: bold;
+    line-height: 1.29;
+    letter-spacing: 0px;
+    text-align: left;
+    margin-bottom: 25px;
+  }
+  .checkbox {
+    margin-bottom: 30px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &-label {
+    color: $greyish-brown;
+    font-size: 16px;
+    padding-left: 41px;
+    position: relative;
+    cursor: pointer;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: -4px;
+      left: 0;
+      width: 30px;
+      height: 30px;
+      border: 2px solid $turquoise-blue;
+      border-radius: 4px;
+    }
+  }
+
+  &-checkbox {
+    display: none;
+
+    &:checked + .filter-label::after {
+      content: '';
+      position: absolute;
+      top: 7px;
+      left: 9px;
+      width: 12px;
+      height: 9px;
+      background: url(../img/mts2-checked.png) 0 0 no-repeat;
+    }
+  }
+
+  &-mobile__btn {
+    display: none;
+  }
+}
+
+@media (max-width: 992px) {
+  .filter {
+    margin: 0;
+  }
+}
+@media (max-width: 767px) {
+  .filter-mobile__btn {
+    text-align: center;
+    display: block;
+    width: 100%;
+    padding: 10px 20px;
+    background-color: $turquoise-blue;
+    color: $white;
+    text-decoration: none;
+    border-radius: 6px;
+
+    &:hover,
+    &:focus {
+      color: $white;
+      text-decoration: none;
+      opacity: .9;
+    }
+  }
+  .filter-title {
+    display: none;
+  }
+
+  .filter-body {
+    padding: 20px;
+    background-color: $white-two;
+    display: none;
+  }
+
+  .filter {
+    margin: 0 0 30px 4px;
+  }
+
+  .section-layout {
+    order:2;
+  }
+
+  .aside-layout {
+    order:1;
+  }
+}
+
+@media (max-width: 480px) {
+  .filter-body {
+    padding: 20px 0;
+  }
+  .filter-label {
+    font-size: 15px;
+  }
+}

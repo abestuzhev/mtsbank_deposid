@@ -4,12 +4,12 @@
     <TaskOptions isEnabled="true">
       <option name="arguments" value="$FileName" />
       <option name="checkSyntaxErrors" value="true" />
-      <option name="description" value="Compiles .scss files into .css files" />
+      <option name="description" />
       <option name="exitCodeBehavior" value="ERROR" />
       <option name="fileExtension" value="scss" />
       <option name="immediateSync" value="true" />
       <option name="name" value="SCSS" />
-      <option name="output" value="$FileNameWithoutExtension$.css:$FileNameWithoutExtension$.css.map" />
+      <option name="output" value="$FileNameWithoutExtension$.css:$FileNameWithoutExtension$.css" />
       <option name="outputFilters">
         <array />
       </option>
