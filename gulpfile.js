@@ -1,23 +1,25 @@
 
-//gulp-sass gulp-autoprefixer gulp-plumber gulp-livereload browser-sync
+//gulp-sass gulp-autoprefixer gulp-plumber gulp-livereload browser-sync gulp-cssmin gulp-rename
 //plugins for development
 var gulp = require('gulp'),
     sass = require('gulp-sass'),
     prefix = require('gulp-autoprefixer'),
     plumber = require('gulp-plumber'),
     livereload = require('gulp-livereload'),
-    minifyCSS = require('gulp-minify-css'),
+    cssmin = require('gulp-cssmin'),
+    rename = require('gulp-rename'),
     browserSync = require('browser-sync').create();
 
 
 var srcDir = 'src/';
 
 gulp.task('sass', function(){
-    return gulp.src('css/**/*.scss')
+    return gulp.src('css/style.scss')
         .pipe(sass().on('error', sass.logError))
         .pipe(prefix('last 3 version'))
+        .pipe(cssmin())
+        // .pipe(rename({suffix: '.min'}))
         .pipe(gulp.dest('css/'))
-        .pipe(minifyCSS())
         .pipe(browserSync.stream())
 });
 
@@ -33,7 +35,7 @@ gulp.task('html', function(){
 });
 
 gulp.task('css', function(){
-    return gulp.src('css/**/*.css')
+    return gulp.src('css/style.css')
         .pipe(browserSync.stream())
 });
 
@@ -55,7 +57,7 @@ gulp.task('connect', function() {
 });
 
 gulp.task('watch', function(){
-    gulp.watch('css/**/*.scss', ['sass'])
+    gulp.watch('css/style.scss', ['sass'])
     gulp.watch(srcDir + 'js/**/*.js', ['js'])
     gulp.watch('**/*.html', ['html'])
     gulp.watch('css/**/*.css', ['css'])
